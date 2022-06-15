@@ -72,12 +72,79 @@
 
 #planning {
     background-color: var(--secondary-color);
-    padding: 6rem 0 4rem 0;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
 }
 
 #planning .column {
     margin: 2rem;
 }
+
+/* SEZIONE TESTIMONIAL */
+
+#testimonial {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#testimonial .card {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+#testimonial .card-image {
+    margin: 1rem;
+}
+
+/* SEZIONE BENEFITS */
+#benefits {
+    background-color: var(--secondary-color);
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+#benefits .cards {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+#benefits .card {
+    margin: 0 0.75rem 1.5rem 0.75rem ;
+    border-radius: 30px;
+    background-color: var(--white-color);
+}
+
+/* SEZIONE ABOUT US */
+
+#about-us {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+#about-us h2 {
+    margin-bottom: 2rem;
+}
+
+#about-us .main-text p {
+    margin-bottom: 2rem;
+}
+
+/* SEZIONE GET STARTED  */
+
+#get-started {
+    background-color: var(--secondary-color);
+    padding: 4rem 2rem;
+}
+
+/* FOOTER  */
+
+.site-footer {
+    background-color: var(--gray-color);
+    padding: 4rem 2rem;
+}
+
+
 
 /* MEDIA QUERY */
 
@@ -99,7 +166,53 @@
 
     #intro .card {
         width: calc(33.333% - 1.5rem);
-        background-color: var(--primary-color-light)
+    }
+
+    #testimonial .card {
+        display: flex;
+    }
+
+    #testimonial .card-text {
+        flex-grow: 1;
+    }
+
+    #testimonial .card-image {
+        flex-shrink: 0;
+        margin: 0 4rem 0 0;
+    }
+
+    #benefits .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefits .card {
+        width: calc(50% - 1.5rem);
+    }
+
+    #about-us .columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-us .column {
+        width: calc(50% - 4rem);
+    }
+
+    #about-us .main-text {
+        margin-right: 2rem;
+    }
+
+    #about-us .us-img {
+        margin-left: 2rem;
+    }
+
+    #get-started .container {
+        max-width: 570px;
+    }
+
+    .site-footer .container {
+        max-width: 410px;
     }
 }
 
@@ -125,6 +238,10 @@
 
     #planning .column {
         width: calc(50% - 4rem);
+    }
+
+    #benefits .card {
+        width: calc(33.333% - 1.5rem);
     }
 }
 
