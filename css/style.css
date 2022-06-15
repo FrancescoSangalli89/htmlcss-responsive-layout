@@ -1,6 +1,137 @@
+:root {
+    --primary-color: #3684FD;
+    --primary-color-light: #B5DDFF;
+
+    --secondary-color: #9792E4;
+    --secondary-color-light: #CBC9F1;
+
+    --text-color: #000;
+    --white-color: #FFF;
+    --gray-color: #333;
+    --yellow-color: #FBC15F;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* REGOLE DI DEBUG */
+
+.debug .box {
+    height: 80px;
+    padding: 1rem;
+    background-color: var(--primary-color-light);
+}
+
+/* REGOLE COMUNI */
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* HEADER */
+
+.site-header {
+    width: 100%;
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+/* SEZIONE INTRO */
+
+#intro .cards {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+#intro .card {
+    margin: 0 0.75rem 1.5rem 0.75rem ;
+    border-radius: 30px;
+}
+
+/* SEZIONE PLANNING */
+
+#planning {
+    background-color: var(--secondary-color);
+    padding: 6rem 0 4rem 0;
+}
+
+#planning .column {
+    margin: 2rem;
+}
+
+/* MEDIA QUERY */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    #intro .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #intro .card:first-child {
+        width: calc(66.666% - 1.5rem);
+    }
+
+    #intro .card {
+        width: calc(33.333% - 1.5rem);
+        background-color: var(--primary-color-light)
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+
+    #intro .card:first-child {
+        display: flex;
+    }
+
+    #intro .card:first-child .box {
+        width: 50%;
+    }
+
+    #planning .columns {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #planning .column {
+        width: calc(50% - 4rem);
+    }
+}
+
+/* DESKTOP LARGE */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
