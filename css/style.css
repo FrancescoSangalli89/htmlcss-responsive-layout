@@ -404,6 +404,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.site-footer .text a {
+    color: var(--secondary-color);
+}
+
 
 
 /* MEDIA QUERY */
@@ -466,7 +470,7 @@ body {
 
     #about-us .column-left {
         margin-right: 2rem;
-        width: calc(60% - 4rem);
+        width: calc(66% - 4rem);
     }
 
     #about-us .column-left .text {
@@ -475,7 +479,7 @@ body {
     }
 
     #about-us .column-right {
-        width: calc(40% - 4rem);
+        width: calc(33% - 4rem);
     }
 
     #about-us .card {
