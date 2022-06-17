@@ -470,22 +470,20 @@ body {
 
     #about-us .column-left {
         margin-right: 2rem;
-        width: calc(66% - 4rem);
+        width: calc(60% - 4rem);
     }
 
     #about-us .column-left .text {
-        padding-right: 2rem;
         line-height: 35px;
     }
 
     #about-us .column-right {
-        width: calc(33% - 4rem);
+        width: calc(40% - 4rem);
     }
 
     #about-us .card {
         margin-left: 2rem;
-        padding-right: 2rem;
-        max-width: 300px;
+        padding-right: 2rem; 
     }
 
     #about-us .text-big {
