@@ -31,6 +31,14 @@ body {
 
 /* REGOLE COMUNI */
 
+h2.title {
+    font-size: 2rem;
+}
+
+h3.title {
+    font-size: 1.5rem;
+}
+
 .text-white {
     color: var(--white-color);
 }
@@ -50,6 +58,18 @@ body {
 
 .rounded {
     border-radius: 20px;
+}
+
+.title,
+.text, 
+.number, 
+.small-title, 
+.main-title {
+    margin-bottom: 2rem;
+}
+
+.text {
+    line-height: 25px;
 }
 
 .btn {
@@ -97,9 +117,12 @@ body {
 .site-header {
     width: 100%;
     background-color: var(--primary-color);
-    margin-bottom: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7777;
 }
 
 .site-header .container {
@@ -117,6 +140,11 @@ body {
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
+    color: var(--white-color);
+}
+
+.site-header .navigator a.btn {
+    color: var(--text-color);
 }
 
 .site-header .navigator li:last-child {
@@ -128,6 +156,9 @@ body {
 }
 
 /* SEZIONE INTRO */
+main {
+    padding-top: 100px;
+}
 
 #intro .cards {
     margin-left: -0.75rem;
@@ -159,18 +190,12 @@ body {
     color: var(--primary-color);
 }
 
-#intro .card .title, 
-#intro .card .text, 
 #intro .card i {
     margin-bottom: 2rem;
 }
 
 #intro .card i {
     font-size: 3rem;
-}
-
-#intro .card .text {
-    line-height: 25px;
 }
 
 #intro .card .img {
@@ -213,15 +238,6 @@ body {
     color: var(--gray-color);
 }
 
-#planning .text {
-    line-height: 25px;
-}
-
-#planning .title, 
-#planning .column-right .text {
-    margin-bottom: 2rem;
-}
-
 #planning img {
     width: 100%;
     padding-bottom: 2rem;
@@ -240,20 +256,13 @@ body {
     padding-bottom: 4rem;
 }
 
-#testimonial .small-title, 
-#testimonial .title, 
 #testimonial .card, 
-#testimonial .text,
 #testimonial .card-image img {
     margin-bottom: 2rem;
 }
 
 #testimonial .small-title {
     font-weight: 100;
-}
-
-#testimonial .text {
-    line-height: 25px;
 }
 
 #testimonial .title {
@@ -289,10 +298,6 @@ body {
     margin-right: -0.75rem;
 }
 
-#benefits .title {
-    margin-bottom: 2rem;
-}
-
 #benefits .card {
     padding: 2rem;
     margin: 0 0.75rem 1.5rem 0.75rem ;
@@ -303,16 +308,10 @@ body {
 #benefits .card .number {
     font-size: 5rem;
     color: var(--secondary-color);
-    margin-bottom: 2rem;
 }
 
 #benefits .card .title {
     color: var(--secondary-color);
-}
-
-#benefits .card .text {
-    line-height: 25px;
-    margin-bottom: 2rem;
 }
 
 /* SEZIONE ABOUT US */
@@ -323,13 +322,7 @@ body {
 }
 
 #about-us .title {
-    margin-bottom: 2rem;
     color: var(--secondary-color);
-}
-
-#about-us .text {
-    margin-bottom: 2rem;
-    line-height: 25px;
 }
 
 #about-us .text-big {
@@ -367,20 +360,9 @@ body {
     padding: 4rem 2rem;
 }
 
-#get-started .small-title, 
-#get-started .title, 
-#get-started .main-title, 
-#get-started .text {
-    margin-bottom: 2rem;
-}
-
 #get-started .small-title {
     color: var(--secondary-color-light);
     font-weight: 200;
-}
-
-#get-started .title {
-    font-size: 2rem;
 }
 
 #get-started .main-title {
@@ -392,16 +374,11 @@ body {
     margin-top: 2rem;
 }
 
-
 /* FOOTER  */
 
 .site-footer {
     background-color: var(--gray-color);
     padding: 4rem 2rem;
-}
-
-.site-footer .text {
-    margin-bottom: 2rem;
 }
 
 .site-footer .text a {
@@ -512,8 +489,13 @@ body {
         display: flex;
     }
 
-    #intro .card:first-child .column-left, #intro .card:first-child .column-left {
+    #intro .card:first-child .column-left, 
+    #intro .card:first-child .column-right {
         width: 50%;
+    }
+
+    #intro .card:first-child .column-right .img img {
+        padding: 2rem 2rem 0 2rem;
     }
 
     #planning .columns {
@@ -553,4 +535,5 @@ body {
     .container {
         max-width: 1140px;
     }
+
 }
